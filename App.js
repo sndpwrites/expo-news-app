@@ -1,12 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import NewsList from "./src";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.header}>Nepali News App</Text>
+      <NewsList />
     </View>
   );
 }
@@ -14,8 +14,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    margin: 10,
+    padding: 10,
+  },
+  header: {
+    fontSize: 30,
+    fontWeight: "bold",
   },
 });
